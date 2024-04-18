@@ -1,0 +1,109 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1E1C2A;
+    font-family: Arial, Tahoma;
+    color: white;
+}
+
+form {
+    display: contents;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+
+.text-field {
+    min-width: 300px;
+}
+
+
+.contacts-list-container {
+    background: #353343;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 0px;
+}
+
+.contacts-list-container > table {
+    background: #221f30;
+    text-align: left;
+    border-spacing: 10px;
+}
+
+.contacts-list-container > table tr:nth-child(even) {
+    background-color: #4A485E;
+}
+
+
+.input-field {
+    font-size: 14px;
+    color: #ebebeb;
+    display: inline-block;
+    border: 1px solid #353343;
+    background: #14111d;
+    outline: none;
+    padding-left: 0.5rem;
+    height: 1.625rem;
+    vertical-align: middle;
+}
+
+.href-button {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0.4375rem 1.25rem;
+    text-align: center;
+    vertical-align: middle;
+    background: #1b8ee3;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #2aa4ff;
+}
+
+.href-button:hover {
+    background: #2aa4ff;
+}
+
+.href-button:active {
+    background: #1b8ee3;
+}
+
+
+.main-page {
+    display: grid;
+    grid-template-columns: 40px 200px auto 40px 0;
+    grid-template-rows: 40px 400px repeat(3, 40px);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+}
+
+.contacts-list-container {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.contact-form__fio-label-container {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.contact-form__fio-text-container {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.contact-form__phone-number-container {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.contact-form__phone-number-text-container {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.contact-form__submit-href-container {
+    grid-area: 5 / 2 / 6 / 4;
+}
